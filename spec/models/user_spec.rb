@@ -17,4 +17,9 @@ RSpec.describe User, type: :model do
       expect(User.create(name: 'User Name')).to_not be_valid
     end
   end
+
+  it 'is not valid with the same name' do
+    user
+    expect(User.create(name: 'User Name')).to_not be_valid
+  end
 end
