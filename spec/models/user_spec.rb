@@ -3,6 +3,10 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   let(:user) { User.create(name: 'User Name', age: 20, biography: 'bio') }
 
+  it 'is valid with valid name attribute' do
+    expect(user).to be_valid
+  end
+
   describe 'Validations' do
     it 'is valid with valid name attribute' do
       expect(user).to be_valid
