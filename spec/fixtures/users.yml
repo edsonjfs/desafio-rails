@@ -1,0 +1,24 @@
+user:
+  name: 'User'
+  age: 20
+  biography: 'Joao biography'
+
+user_same_name:
+  name: 'User'
+  age: 20
+  biography: 'Joao biography'
+
+user_nameless:
+  name:
+  age: 20
+  biography: 'User_nameless biography'
+
+user_just_name:
+  name: 'User Name'
+  age: 
+  biography:
+
+user_valid:
+  name: 'User Valid'
+  age: 20
+  biography: 'User Valid Biography'
