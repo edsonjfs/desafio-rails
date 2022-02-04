@@ -4,9 +4,9 @@ class Telephone < ApplicationRecord
     { with: /\A\d+\z/, message: 'Must have numbers olny' }
 
   validates :phone_type, presence: true
-  VALID_PHONE_TYPES = %w(Home Work Other home work other)
-  validates_inclusion_of :phone_type, :in => VALID_PHONE_TYPES
+  VALID_PHONE_TYPES = %w[Home Work Other home work other].freeze
+  validates_inclusion_of :phone_type, in: VALID_PHONE_TYPES
 
-  validates :main_phone_number, inclusion: { in: [true, false] }, uniqueness:
-    { scope: :contact, conditions: -> { where.not(main_phone_number: false) } }
+  validates :main_phone_number, inclusion: { in: [true, false] },
+    uniqueness: { scope: :contact, conditions: -> { where.not(main_phone_number: false) } }
 end
