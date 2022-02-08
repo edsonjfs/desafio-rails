@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-02-04T18:18:52-03:00">2022-02-04T18:18:52-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-02-08T17:35:57-03:00">2022-02-08T17:35:57-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.31
+         1.32
        </span>
     </span> hits/line
     )
@@ -315,11 +315,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#fc0e20110f77a8683438b11eca5fa2907cb033cf" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">23</td>
+            <td class="cell--number">24</td>
             <td class="cell--number">13</td>
             <td class="cell--number">13</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.23</td>
+            <td class="cell--number">1.31</td>
             
           </tr>
         
@@ -4294,24 +4294,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;Validations&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="5">
             <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">  let(:user) { User.create(name: &#39;User Name&#39;, age: 20, biography: &#39;bio&#39;) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="5">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">  let(:nameless_user) { User.create(name: &#39;&#39;, age: 20, biography: &#39;bio&#39;) }</code>
+            <code class="ruby">    let(:user) { User.create!(name: &#39;User Name&#39;, age: 20, biography: &#39;bio&#39;) }</code>
           </li>
         </div>
       
@@ -4333,7 +4333,7 @@
 
             
 
-            <code class="ruby">  it &#39;is valid with valid name attribute&#39; do</code>
+            <code class="ruby">    it &#39;is valid with valid name attribute&#39; do</code>
           </li>
         </div>
       
@@ -4344,7 +4344,7 @@
 
             
 
-            <code class="ruby">    expect(user).to be_valid</code>
+            <code class="ruby">      expect(user).to be_valid</code>
           </li>
         </div>
       
@@ -4355,7 +4355,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -4377,18 +4377,18 @@
 
             
 
-            <code class="ruby">  it &#39;is not valid without name attribute&#39; do</code>
+            <code class="ruby">    it &#39;is not valid without name attribute&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="12">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    expect(nameless_user).to_not be_valid</code>
+            <code class="ruby">      expect { User.create!(name: &#39;&#39;) }.to raise_error(ActiveRecord::RecordInvalid)</code>
           </li>
         </div>
       
@@ -4399,7 +4399,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -4421,7 +4421,7 @@
 
             
 
-            <code class="ruby">  it &#39;is not valid with the same name&#39; do</code>
+            <code class="ruby">    it &#39;is not valid with the same name&#39; do</code>
           </li>
         </div>
       
@@ -4432,18 +4432,18 @@
 
             
 
-            <code class="ruby">    user</code>
+            <code class="ruby">      user</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="17">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    expect(User.create(name: &#39;User Name&#39;)).to_not be_valid</code>
+            <code class="ruby">      expect { User.create!(name: &#39;User Name&#39;) }.to raise_error(ActiveRecord::RecordInvalid)</code>
           </li>
         </div>
       
@@ -4454,7 +4454,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -4465,18 +4465,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="20">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="20">
+            
             
 
             
 
-            <code class="ruby">  it &#39;is valid just with name attribute&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4487,12 +4487,23 @@
 
             
 
-            <code class="ruby">    expect(User.create(name: &#39;Name&#39;)).to be_valid</code>
+            <code class="ruby">  it &#39;is valid just with name attribute&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="22">
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(User.create!(name: &#39;Name&#39;)).to be_valid</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
             
             
 
@@ -4503,7 +4514,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="23">
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
