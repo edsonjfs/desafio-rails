@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 2022_02_07_125554) do
+
 
   create_table "contacts", force: :cascade do |t|
     t.string "name"
@@ -20,6 +22,7 @@ ActiveRecord::Schema.define(version: 2022_02_07_125554) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_contacts_on_user_id"
   end
+
 
   create_table "telephones", force: :cascade do |t|
     t.string "phone_number"
@@ -42,4 +45,4 @@ ActiveRecord::Schema.define(version: 2022_02_07_125554) do
 
   add_foreign_key "contacts", "users"
   add_foreign_key "telephones", "contacts"
-end
+
