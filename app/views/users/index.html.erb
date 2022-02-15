@@ -1,0 +1,27 @@
+<h1>User's Table:</h1>
+ 
+<table class="user-table">
+  <thead class="user-table__thead">
+    <tr>
+      <th class="user-table__th">User Name</th>
+      <th class="user-table__th">Total of Contacts</th>
+      <th class="user-table__th">Total of Telephones</th>
+    </tr>
+  </thead>
+
+  <tbody class="user-table__tbody">
+    <% @users.each do |user|  %>
+      <% @count = 0  %>
+      <tr>
+        <td class="user-table__td"><%= user.name %></td>
+        <td class="user-table__td"><%= user.contacts.count %></td>
+          
+        <% user.contacts.each do |contact| %> 
+          <% @count += contact.telephones.count %>
+        <% end %>
+          
+        <td class="user-table__td"> <%= @count %> </td>
+      </tr>
+    <% end %>  
+  </tbody>
+</table> 

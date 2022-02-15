@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+ @import 'settings/_defaults.css';
+
+ @import 'elements/_table.css';

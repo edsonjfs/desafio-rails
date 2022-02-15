@@ -272,6 +272,13 @@
       "/home/edinho/Documentos/CodeMiner/desafio-rails/config/routes.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -279,6 +286,51 @@
       "/home/edinho/Documentos/CodeMiner/desafio-rails/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/app/helpers/users_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/spec/models/contact_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          6,
+          2,
+          4,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
           null
         ]
       },
@@ -313,13 +365,6 @@
           null,
           null,
           null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
           1,
           1,
           1,
@@ -353,6 +398,14 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
@@ -362,9 +415,9 @@
           1,
           1,
           1,
-          null,
-          null,
           1,
+          null,
+          null,
           1,
           1,
           null,
@@ -408,8 +461,155 @@
           1,
           null
         ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/spec/requests/users_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/spec/views/users/create.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/spec/views/users/destroy.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/spec/views/users/edit.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/spec/views/users/index.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/spec/views/users/new.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/spec/views/users/show.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/spec/views/users/update.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          7,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/edinho/Documentos/CodeMiner/desafio-rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1644352557
+    "timestamp": 1644949682
   }
 }

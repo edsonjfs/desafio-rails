@@ -11,45 +11,46 @@ RSpec.describe Telephone, type: :model do
       contact_id: 1
     )
   }
+  describe 'Telephone Validations' do
+    it 'is valid with valid attributes' do
+      user
+      contact
+      expect(telephone).to be_valid
+    end
 
-  it 'is valid with valid attributes' do
-    user
-    contact
-    expect(telephone).to be_valid
-  end
+    it 'is valid changing main_phone_number to false' do
+      user
+      contact
+      telephone.main_phone_number = false
+      expect(telephone).to be_valid
+    end
 
-  it 'is valid changing main_phone_number to false' do
-    user
-    contact
-    telephone.main_phone_number = false
-    expect(telephone).to be_valid
-  end
+    it 'is not valid without phone_number attribute' do
+      user
+      contact
+      telephone.phone_number = nil
+      expect(telephone).to_not be_valid
+    end
 
-  it 'is not valid without phone_number attribute' do
-    user
-    contact
-    telephone.phone_number = nil
-    expect(telephone).to_not be_valid
-  end
+    it 'is not valid without phone_type attribute' do
+      user
+      contact
+      telephone.phone_type = nil
+      expect(telephone).to_not be_valid
+    end
 
-  it 'is not valid without phone_type attribute' do
-    user
-    contact
-    telephone.phone_type = nil
-    expect(telephone).to_not be_valid
-  end
+    it 'is not valid without contact_id attribute' do
+      user
+      contact
+      telephone.contact_id = nil
+      expect(telephone).to_not be_valid
+    end
 
-  it 'is not valid without contact_id attribute' do
-    user
-    contact
-    telephone.contact_id = nil
-    expect(telephone).to_not be_valid
-  end
-
-  it 'is not valid without main_phone_number attribute' do
-    user
-    contact
-    telephone.main_phone_number = nil
-    expect(telephone).to_not be_valid
+    it 'is not valid without main_phone_number attribute' do
+      user
+      contact
+      telephone.main_phone_number = nil
+      expect(telephone).to_not be_valid
+    end
   end
 end

@@ -1,0 +1,24 @@
+.user-table {
+  border-collapse: collapse;
+  margin: var(--margin-default);
+  font-size: var(--font-size-default);
+  font-family: var(--font-family-default);
+  min-width: var(--width-400-px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-table__thead {
+  background-color: var(--table-bg-color);
+  color: var(--secondary-color);
+}
+
+.user-table__th,
+.user-table__td {
+    padding: var(--padding-default);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.user-table__tbody tr:nth-of-type(even) {
+  background-color:var(--primary-color);
+}
