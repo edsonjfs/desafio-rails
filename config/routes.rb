@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :users
+
   get     'users'       => 'users#index'
-  get     'users/:id'   => 'users#show'
+  get     'users/:id'   => 'users#show' 
   get     'users/new'   => 'users#new'
   post    'users'       => 'users#create'
   get     'users/edit'  => 'users#edit'

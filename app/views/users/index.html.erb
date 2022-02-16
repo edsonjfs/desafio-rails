@@ -18,6 +18,7 @@
         <td class="user-table__td"><%= user.age %></td>
         <td class="user-table__td"><%= user.contacts.count %></td>
         <td class="user-table__td"> <%= user.telephones.count %> </td>
+        <td class="user-table__td"><%= link_to 'User Details', user_path(user.id) %></td>
       </tr>
     <% end %>  
   </tbody>
