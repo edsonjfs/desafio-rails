@@ -17,3 +17,5 @@
  @import 'settings/_defaults.css';
 
  @import 'elements/_table.css';
+ @import 'elements/_div.css';
+ @import 'elements/_h1.css';
