@@ -1,5 +1,5 @@
 .show__h1 {
-  padding: 30px;
+  padding: var(--padding-default);
   display: flex;
   justify-content: center;
   background-color: var(--table-bg-color);
