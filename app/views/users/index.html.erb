@@ -12,17 +12,11 @@
 
   <tbody class="user-table__tbody">
     <% @users.each do |user|  %>
-      <% @count = 0  %>
       <tr>
         <td class="user-table__td"><%= user.name %></td>
         <td class="user-table__td"><%= user.age %></td>
         <td class="user-table__td"><%= user.contacts.count %></td>
-          
-        <% user.contacts.each do |contact| %> 
-          <% @count += contact.telephones.count %>
-        <% end %>
-          
-        <td class="user-table__td"> <%= @count %> </td>
+        <td class="user-table__td"> <%= user.telephones.count %> </td>
       </tr>
     <% end %>  
   </tbody>
