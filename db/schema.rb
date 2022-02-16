@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_07_125554) do
+ActiveRecord::Schema.define(version: 2022_02_15_144755) do
 
   create_table "contacts", force: :cascade do |t|
     t.string "name"
@@ -21,6 +21,12 @@ ActiveRecord::Schema.define(version: 2022_02_07_125554) do
     t.index ["user_id"], name: "index_contacts_on_user_id"
   end
 
+  create_table "contacts_telephones", id: false, force: :cascade do |t|
+    t.integer "contact_id", null: false
+    t.integer "telephone_id", null: false
+    t.index ["contact_id", "telephone_id"], name: "index_contacts_telephones_on_contact_id_and_telephone_id"
+    t.index ["telephone_id", "contact_id"], name: "index_contacts_telephones_on_telephone_id_and_contact_id"
+  end
 
   create_table "telephones", force: :cascade do |t|
     t.string "phone_number"
@@ -43,4 +49,4 @@ ActiveRecord::Schema.define(version: 2022_02_07_125554) do
 
   add_foreign_key "contacts", "users"
   add_foreign_key "telephones", "contacts"
-
+end

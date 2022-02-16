@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Contact, type: :model do
   let(:user) { User.create!(name: 'User Name', age: 20, biography: 'bio') }
+  let(:user_02) { User.create!(name: 'User_02 Name', age: 30, biography: 'bio') }
   let(:contact) { Contact.create!(name: 'Contact Name', birthday: '01/01/2021', user_id: user.id) }
 
   describe 'Validations' do

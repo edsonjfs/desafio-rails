@@ -1,0 +1,23 @@
+<h1>User's Table:</h1>
+ 
+<table class="user-table">
+  <thead class="user-table__thead">
+    <tr>
+      <th class="user-table__th">User Name</th>
+      <th class="user-table__th">User Age</th>
+      <th class="user-table__th">Total of Contacts</th>
+      <th class="user-table__th">Total of Telephones</th>
+    </tr>
+  </thead>
+
+  <tbody class="user-table__tbody">
+    <% @users.each do |user| %>
+      <tr>
+        <td class="user-table__td"><%= user.name %></td>
+        <td class="user-table__td"><%= user.age %></td>
+        <td class="user-table__td"><%= user.contacts.count %></td>
+        <td class="user-table__td"> <%= user.telephones.count %> </td>
+      </tr>
+    <% end %>  
+  </tbody>
+</table> 
