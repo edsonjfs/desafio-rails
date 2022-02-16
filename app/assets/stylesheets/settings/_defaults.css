@@ -1,11 +1,14 @@
 :root{
-  --primary-color:          #fb8500;
+  --primary-color:          #d37000;
   --secondary-color:        #023047;
   --table-bg-color:         #219ebc;
 
   --font-size-default:        1.5em;
   --font-family-default:      sans-serif;
   --margin-default:           15px;  
-  --padding-default:          15px;  
+  --padding-default:          15px;
+  --border-radius-default:    5px;
+  --zero-sapce:               0;
   --width-400-px:             400px;
+  --width-600-px:             600px;
 }

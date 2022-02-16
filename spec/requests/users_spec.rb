@@ -12,8 +12,10 @@ RSpec.describe 'Users', type: :request do
 
   describe 'GET /show' do
     it 'returns http success' do
+      user = User.create!(name: 'User')
       get '/users#show'
-      expect(response).to have_http_status(:success)
+      expect(response).to have_http_status(200)
+      expect(assigns(:users)).to eq([user])
     end
   end
 
