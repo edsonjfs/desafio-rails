@@ -1,2 +1,26 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>New User</h1>
+
+<%= form_with model: @user do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :age %><br>
+    <%= form.number_field :age %>
+  </div>
+  
+  <div>
+    <%= form.label :biography %><br>
+    <%= form.text_area :biography %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<div>
+    <button> <%= link_to 'Back To Users', users_path%> </button>
+</div>

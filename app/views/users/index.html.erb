@@ -18,7 +18,12 @@
         <td class="user-table__td"><%= user.age %></td>
         <td class="user-table__td"><%= user.contacts.count %></td>
         <td class="user-table__td"> <%= user.telephones.count %> </td>
+        <td class="user-table__td"><%= link_to 'User Details', user_show_path(user.id) %></td>
       </tr>
     <% end %>  
   </tbody>
-</table> 
+</table>
+
+<div>
+    <button> <%= link_to 'New User', users_new_path %> </button>
+</div>
