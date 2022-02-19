@@ -4,7 +4,7 @@ RSpec.describe 'Users', type: :request do
   describe 'GET /index' do
     it 'returns http success' do
       user = User.create!(name: 'User')
-      get '/users#index'
+      get users_path
       expect(response).to have_http_status(200)
       expect(assigns(:users)).to eq([user])
     end
@@ -13,9 +13,9 @@ RSpec.describe 'Users', type: :request do
   describe 'GET /show' do
     it 'returns http success' do
       user = User.create!(name: 'User')
-      get '/users#show'
+      get user_path(user.id)
       expect(response).to have_http_status(200)
-      expect(assigns(:users)).to eq([user])
+      expect(assigns(:user)).to eq(user)
     end
   end
 
