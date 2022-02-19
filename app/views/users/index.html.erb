@@ -18,7 +18,11 @@
         <td class="user-table__td"><%= user.age %></td>
         <td class="user-table__td"><%= user.contacts.count %></td>
         <td class="user-table__td"> <%= user.telephones.count %> </td>
+<<<<<<< HEAD
         <td class="user-table__td"><%= link_to 'User Details', user_show_path(user.id) %></td>
+=======
+        <td class="user-table__td"><%= link_to 'User Details', user_path(user.id) %></td>
+>>>>>>> refs/remotes/origin/main
       </tr>
     <% end %>  
   </tbody>
