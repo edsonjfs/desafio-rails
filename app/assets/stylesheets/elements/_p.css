@@ -1,0 +1,6 @@
+.show__p {
+  padding: var(--padding-default);
+  color: var(--secondary-color);
+  font-size: var(--font-size-default);
+  font-family: var(--font-family-default);
+}

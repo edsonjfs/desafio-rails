@@ -1,0 +1,6 @@
+.show {
+  margin: auto;
+  width: var(--width-600-px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: var(--border-radius-default);
+}

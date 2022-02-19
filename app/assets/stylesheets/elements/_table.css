@@ -22,3 +22,9 @@
 .user-table__tbody tr:nth-of-type(even) {
   background-color:var(--primary-color);
 }
+
+.user-table--show{
+  padding: var(--zero-sapce);
+  margin: var(--zero-sapce);
+  width: var(--width-600-px);
+}

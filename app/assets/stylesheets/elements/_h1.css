@@ -1,0 +1,9 @@
+.show__h1 {
+  padding: var(--padding-default);
+  display: flex;
+  justify-content: center;
+  background-color: var(--table-bg-color);
+  color: var(--primary-color);
+  border-top-left-radius: var(--border-radius-default);
+  border-top-right-radius: var(--border-radius-default);
+}
